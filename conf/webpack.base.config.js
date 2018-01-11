@@ -18,6 +18,10 @@ export default new Config().merge({
           cacheDirectory: true
         },
         exclude: /node_modules/
+      },
+      {
+        test: /\.(png|jpg)$/,
+        loader: "url-loader?limit=8192"
       }
     ]
   },
